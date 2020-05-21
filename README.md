@@ -7,40 +7,39 @@ An example how to setup a level selection system, along with saving and loading 
 ![Level Select System image](/doc/level_select_system.png)
 
 # Features
-* Show Game Worlds
-* Show selected world levels
+* Show game worlds (3 different ones in this demo)
+* Show selected world's levels
 * Show selected levels status (locked, not played, solved)
-* Level data stored in scriptable object
-* Modified level info stored in serializable classes
-* Save/load of level data
+* World and level data stored in scriptable object
+* Modified level info stored in serializable class
+* Save/load World/level state data
 
 # How to use
-Open menu scene and press play. Press play to enter/exit "game" scene to solve a level. Press unlock world to unlock a world (there are no conditions for unlocking in this demo).
-
+Open menu scene and press Play. Press "unlock world" to unlock a world (there are no conditions for unlocking in this demo). Press "play game" to enter/exit "game" scene to solve a level. 
 
 # Classes
 
 ## GameData.cs
-ScriptableObject container for clean game world/level SaveData.
+Scriptable Object container for clean game world/level SaveData.
 
 ## SaveData.cs
-Serializable class containing world/level save data
+Serializable class containing world/level save data.
 
 ##  Worlds.cs
-Access scriptable object data from this class asset.
+Worlds Manager and other classes access scriptable object's data via this class.
 
 ## WorldsManager.cs
 Handles unlocking of worlds and managing of selected world and level.
 
 ## WorldMenuView.cs
-Handles drawing, updating and input related of level list and level menu buttons.
+Handles drawing, updating and input related to level list and level menu buttons.
 
 ## LevelRowView.cs
 Handles drawing, updating and input related to level row view.
 
 
 # About
-I created this level select menu system some years ago, as a learning experience.
+I created this level select menu system some years ago as a learning experience.
 
 # Copyright
 Code created by Sami S. use of any kind without a written permission from the author is not allowed. But feel free to take a look.
