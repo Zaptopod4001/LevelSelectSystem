@@ -11,8 +11,8 @@ An example how to setup a level selection system, along with saving and loading 
 * Show selected world's levels
 * Show selected levels status (locked, not played, solved)
 * World and level data stored in scriptable object
-* Modified level info stored in serializable class
-* Save/load World/level state data
+* Modified level data stored in serializable class
+* Save/load world/level state data
 
 # How to use
 Open menu scene and press Play. Press "unlock world" to unlock a world (there are no conditions for unlocking in this demo). Press "play game" to enter/exit "game" scene to solve a level. 
